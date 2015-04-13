@@ -1,2 +1,3 @@
 # vaadin-bug-demos
-Demo applications to accompany bug reports
+
+Simple Vaadin demo applications intended for reproducing reported bugs.
