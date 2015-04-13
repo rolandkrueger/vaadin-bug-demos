@@ -1,5 +1,7 @@
 # ConcurrentModificationException in Navigator when using Spring Boot
 
+Note: Run demo with `mvn package spring-boot:run`, visit http://localhost:8080 and click on link 'Your Profile' to reproduce. This sets off a redirect to a login page in a ViewChangeListener which results in a ConcurrentModificationException.
+
 When redirecting to a different view in ViewChangeListener.beforeViewChange() through Navigator.navigateTo(), the following ConcurrentModificationException is thrown:
 
 java.util.ConcurrentModificationException: null
